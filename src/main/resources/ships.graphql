@@ -1,0 +1,17 @@
+schema {
+    query: Query
+}
+
+type Query {
+    allShips: [Ship]
+    ship(id: Int): Ship
+}
+
+type Ship {
+    serialNo: Int
+    name: String
+    weight: Float
+    captain: String
+    crew: [String]
+    fabricationYear: Int
+}
